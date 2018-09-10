@@ -43,7 +43,7 @@ $ oc new-project redhat-raffle --display-name="Red Hat Raffle with SAP HANA" --d
 ----
 
 == Microservices
-IMPORTANT: You will need to update the application-openshift.properties file located in src/main/resources/ with the values for you SAP HANA instance before building and deploying.
+IMPORTANT: You will need to update the application-openshift.properties file located in src/main/resources/ with the values for your SAP HANA instance before building and deploying.
 [source,bash,options="nowrap",subs="attributes+"]
 spring.datasource.url=jdbc:sap://{host:port}
 spring.datasource.driver-class-name=com.sap.db.jdbc.Driver
