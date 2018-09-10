@@ -15,7 +15,7 @@ To clone the Raffle project on your local environment:
 ----
 $ git clone git@github.com:tejones/redhat-raffle
 
-$ cd redhat-raffle
+$ cd redhat-raffle-sap-hana
 ----
 
 == Adding the SAP HANA JDBC jar to your maven repository.
