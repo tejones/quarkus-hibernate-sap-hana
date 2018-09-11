@@ -6,7 +6,7 @@ IMPORTANT: Requires ngrok.
 
 IMPORTANT: Requires Maven 3.3 or greater.
 
-IMPORTANT: Requires Openshift Container Platform 3.7 or greater.
+IMPORTANT: Requires Openshift 3.7 or greater. I use minishift.
 
 == Cloning the source code
 To clone the Raffle project on your local environment:
