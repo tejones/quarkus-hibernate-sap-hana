@@ -19,7 +19,7 @@ $ cd redhat-raffle-sap-hana
 ----
 
 == Adding the SAP HANA JDBC jar to your maven repository.
-The maven build requires the SAP HANA jdbc jar. If you have not added it to your local or private maven repository you can do so with the folowing maven command:
+The maven build requires the SAP HANA jdbc jar. If you have not added it to your local or private maven repository you can do so with the following maven command:
 
 [source,bash,options="nowrap",subs="attributes+"]
 ----
@@ -31,7 +31,7 @@ To initialize the database:
 
 [source,bash,options="nowrap",subs="attributes+"]
 ----
-Connect to your SAP HANA instance and execute the the DDL located in redhat-raffle-sap-hana/raffle-persistance/sql/raffle-hana.ddl. This will create two tables: "attendee" and "event". "attendee" is used for the scanned attendees from the mobile app. The randomized winner will also be delected from this tabe. The "event" table is there if you would like to create entries and raffles for multiple events. That will need to be wired up if desired since it is not out-of-the-box.
+Connect to your SAP HANA instance and execute the DDL located in redhat-raffle-sap-hana/raffle-persistance/sql/raffle-hana.ddl. This will create two tables: "attendee" and "event". "attendee" is used for the scanned attendees from the mobile app. The randomized winner will also be determined from this table. The "event" table is there if you would like to create entries and raffles for multiple events. That will need to be wired up if desired since it is not out-of-the-box.
 ----
 
 == Openshift Project
