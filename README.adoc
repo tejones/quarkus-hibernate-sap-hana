@@ -13,7 +13,7 @@ To clone the Raffle project on your local environment:
 
 [source,bash,options="nowrap",subs="attributes+"]
 ----
-$ git clone git@github.com:tejones/redhat-raffle
+$ git clone https://github.com/tejones/redhat-raffle-sap-hana.git
 
 $ cd redhat-raffle-sap-hana
 ----
