@@ -1,15 +1,15 @@
 package com.redhat.raffle.exception;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import javax.ws.rs.NotFoundException;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.ext.ExceptionMapper;
+import javax.ws.rs.ext.Provider;
 
-@ResponseStatus(HttpStatus.NOT_FOUND)
-public class ResourceNotFoundException extends RuntimeException {
-    public ResourceNotFoundException(String message) {
-        super(message);
-    }
+@Provider
+public class ResourceNotFoundException implements ExceptionMapper<NotFoundException> {
 
-    public ResourceNotFoundException(String message, Throwable cause) {
-        super(message, cause);
+    @Override
+    public Response toResponse(NotFoundException e) {
+        return Response.status(Response.Status.NOT_FOUND).header("reason", e.getMessage()).build();
     }
 }

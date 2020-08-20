@@ -444,8 +444,8 @@ function loop() {
 
     if (firstrun) {
         firstrun = false;
-        //var url = 'http://raffle-service-redhat-raffle.os.ce.usersys.redhat.com/raffle/randomizedattendees'
-	var url = 'http://red-hat-raffle.ngrok.io/raffle/randomizedattendees';
+        var url = 'http://raffle-service-ms-dev.apps.cluster-boston-09a3.boston-09a3.sandbox1250.opentlc.com/raffle/randomizedattendees';
+	// var url = 'http://localhost:8080/raffle/randomizedattendees';
         xhr.open('get', url, true);
         xhr.responseType = 'json';
         xhr.onload = function() {

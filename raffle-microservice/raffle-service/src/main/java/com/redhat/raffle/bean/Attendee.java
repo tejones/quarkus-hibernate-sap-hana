@@ -10,16 +10,16 @@ import javax.persistence.Table;
 public class Attendee extends AuditModel {
    
 	@Id
-	@Column(columnDefinition = "id")
+	@Column(name = "id")
     private String id;
 
-    @Column(columnDefinition = "first_name")
+    @Column(name = "first_name")
     private String firstName;
 
-    @Column(columnDefinition = "last_name")
+    @Column(name = "last_name")
     private String lastName;
     
-    @Column(columnDefinition = "scanned_value")
+    @Column(name = "scanned_value")
     private String scannedValue;
     
     public String getId() {
