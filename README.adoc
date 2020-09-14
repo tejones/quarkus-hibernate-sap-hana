@@ -47,10 +47,12 @@ $ oc new-project redhat-raffle --display-name="Red Hat Raffle with SAP HANA" --d
 == Microservices
 IMPORTANT: You will need to update the application-openshift.properties file located in src/main/resources/ with the values for your SAP HANA instance before building and deploying.
 [source,bash,options="nowrap",subs="attributes+"]
-spring.datasource.url=jdbc:sap://{host:port}
-spring.datasource.driver-class-name=com.sap.db.jdbc.Driver
-spring.datasource.username={sap_hana_username}
-spring.datasource.password={sap_hana_password}
+quarkus.datasource.url=jdbc:sap://{host:port}
+quarkus.datasource.driver=com.sap.db.jdbc.Driver
+quarkus.datasource.username={sap_hana_username}
+quarkus.datasource.password={sap_hana_password}
+
+IMPORTANT: You will need to edit the app.js to set application url to your application for the landing page to display correct.
 
 To initialize the microservices:
 
@@ -59,7 +61,7 @@ To initialize the microservices:
 $ cd raffle-microservice
 
 $ cd raffle-service
-$ mvn clean fabric8:deploy -Popenshift 
+$ mvn clean package -Dquarkus.kubernetes.deploy=true
 $ cd ..
 ----
 
