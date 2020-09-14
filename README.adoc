@@ -1,4 +1,4 @@
-IMPORTANT: This project is a sample application using OpenShift, SAP HANA, Hibernate and Spring Boot to illustrate AppDev with Red Hat and SAP. It uses a raffle as an example, but can be repurposed as a starter application for any enterprise development project that requires integrating SAP data in container applications.
+IMPORTANT: This project is a sample application using OpenShift, SAP HANA, Hibernate and Quarkus to illustrate AppDev with Red Hat and SAP. It uses a raffle as an example, but can be repurposed as a starter application for any enterprise development project that requires integrating SAP data in container applications.
 
 image:redhat_raffle_big.png[Red Hat Raffle Logo, title="Red Hat Raffle Logo"]
 
